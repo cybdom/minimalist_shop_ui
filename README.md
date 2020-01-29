@@ -6,10 +6,10 @@ Bitcoin Address: bc1q7hvpgfw29ckxdhckvd5j3fcedgqx40vk687a0h
 
 Result:
 
-<img src="screenshot1.png">
-<img src="screenshot2.png">
-<img src="screenshot3.png">
-<img src="screenshot4.png">
+<img src="screenshot1.png" height="480px"> 
+<img src="screenshot2.png" height="480px"> 
+<img src="screenshot3.png" height="480px"> 
+<img src="screenshot4.png" height="480px">
 
 
 ## Getting Started
