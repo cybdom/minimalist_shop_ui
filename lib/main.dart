@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/global.dart';
-import 'package:shopping_app/test.dart';
 import 'package:shopping_app/ui/screens/screens.dart';
 
 void main() => runApp(MyApp());
@@ -41,19 +40,19 @@ class _MyAppState extends State<MyApp> {
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
-              title: Text("Home"),
+              label: "Home",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.list),
-              title: Text("Categories"),
+              label: "Categories",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.shopping_basket),
-              title: Text("Cart"),
+              label: "Cart",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person_outline),
-              title: Text("Profile"),
+              label: "Profile",
             ),
           ],
         ),

@@ -5,7 +5,7 @@ import '../../global.dart';
 class SizeSelector extends StatefulWidget {
   final int id;
 
-  const SizeSelector({Key key, this.id}) : super(key: key);
+  const SizeSelector({Key? key, required this.id}) : super(key: key);
   @override
   _SizeSelectorState createState() => _SizeSelectorState();
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/global.dart';
 
 enum CarouselTypes { home, details }
 
@@ -7,9 +6,9 @@ class CarouselProductsList extends StatefulWidget {
   final CarouselTypes type;
   final List<String> productsList;
   const CarouselProductsList({
-    Key key,
-    @required this.type,
-    @required this.productsList,
+    Key? key,
+    required this.type,
+    required this.productsList,
   }) : super(key: key);
   @override
   _CarouselProductsListState createState() => _CarouselProductsListState();

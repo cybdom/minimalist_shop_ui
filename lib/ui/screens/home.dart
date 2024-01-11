@@ -16,10 +16,8 @@ class HomeScreen extends StatelessWidget {
             children: <Widget>[
               Text(
                 "Deal Finder",
-                style: Theme.of(context)
-                    .textTheme
-                    .display1
-                    .copyWith(fontWeight: FontWeight.bold, color: Colors.black),
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                    fontWeight: FontWeight.bold, color: Colors.black),
               ),
               Container(
                 decoration: BoxDecoration(
@@ -82,7 +80,7 @@ class HomeScreen extends StatelessWidget {
           SizedBox(height: 7.5),
           Text(
             "Best Deals",
-            style: Theme.of(context).textTheme.title,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
           Container(
             height: 150,
@@ -119,7 +117,7 @@ class HomeScreen extends StatelessWidget {
           ),
           Text(
             "Most Popular",
-            style: Theme.of(context).textTheme.title,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
           Container(
             height: 150,

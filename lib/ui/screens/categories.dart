@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:shopping_app/global.dart';
 
@@ -21,8 +19,8 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
             "Categories",
             style: Theme.of(context)
                 .textTheme
-                .display1
-                .copyWith(fontWeight: FontWeight.bold, color: Colors.black),
+                .headlineMedium
+                ?.copyWith(fontWeight: FontWeight.bold, color: Colors.black),
           ),
           SizedBox(height: 15),
           Expanded(
@@ -61,8 +59,8 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                               "${categories[i].title}",
                               style: Theme.of(context)
                                   .textTheme
-                                  .button
-                                  .copyWith(
+                                  .labelLarge
+                                  ?.copyWith(
                                       color: _selectedCat == i
                                           ? Colors.black
                                           : Colors.white),

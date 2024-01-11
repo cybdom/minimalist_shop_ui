@@ -13,8 +13,8 @@ class CartScreen extends StatelessWidget {
             "Bag",
             style: Theme.of(context)
                 .textTheme
-                .display1
-                .copyWith(fontWeight: FontWeight.bold, color: Colors.black),
+                .headlineMedium
+                ?.copyWith(fontWeight: FontWeight.bold, color: Colors.black),
           ),
           SizedBox(height: 15),
           Expanded(
@@ -44,7 +44,7 @@ class CartScreen extends StatelessWidget {
                           children: <Widget>[
                             Text(
                               "${bag[i].title}",
-                              style: Theme.of(context).textTheme.title,
+                              style: Theme.of(context).textTheme.titleLarge,
                             ),
                             Text(
                               "${bag[i].price}",
@@ -67,26 +67,29 @@ class CartScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text("TOTAL", style: Theme.of(context).textTheme.subtitle),
+                    Text("TOTAL",
+                        style: Theme.of(context).textTheme.titleSmall),
                     Text("USD. 899.01",
-                        style: Theme.of(context).textTheme.headline),
+                        style: Theme.of(context).textTheme.headlineSmall),
                   ],
                 ),
               ),
               Expanded(
                 child: Container(
                   height: 50,
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     child: Text(
                       "CHECKOUT",
-                      style: Theme.of(context).textTheme.button.copyWith(
+                      style: Theme.of(context).textTheme.labelLarge?.copyWith(
                             color: Colors.white,
                           ),
                     ),
                     onPressed: () {},
-                    color: Colors.black,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15.0),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.black,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
                     ),
                   ),
                 ),
@@ -101,7 +104,7 @@ class CartScreen extends StatelessWidget {
 
 class MyCounter extends StatefulWidget {
   const MyCounter({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -135,7 +138,7 @@ class _MyCounterState extends State<MyCounter> {
         SizedBox(width: 15),
         Text(
           "$_currentAmount",
-          style: Theme.of(context).textTheme.title,
+          style: Theme.of(context).textTheme.titleLarge,
         ),
         SizedBox(width: 15),
         GestureDetector(
